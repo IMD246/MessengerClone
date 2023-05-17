@@ -5,7 +5,10 @@ function App() {
     <div className="App">
       <ConversationsContainer />
       <div className="wrapper">
-        <div className="none"><span className="content">Hãy chọn một đoạn chat hoặc bắt đầu cuộc trò chuyện mới</span></div>
+        <div className="none">
+          <span className="content"></span>
+          <button></button>
+        </div>
       </div>
     </div >
   );
