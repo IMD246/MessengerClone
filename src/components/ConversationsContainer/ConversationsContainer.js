@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './ConversationsContainer.module.scss'
-import { ChatIcon, EveryOneIcon, MarketPlaceIcon, StoreMessageIcon, WaitingMessageIcon } from '../../assets/Icons'
+import { ChatIcon, EveryOneIcon, MarketPlaceIcon, StoreMessageIcon, WaitingMessageIcon } from '../Icons'
+import classNames from 'classnames/bind';
+import Avatar from '../Avatar/Avatar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowsLeftRightToLine, faMaximize } from '@fortawesome/free-solid-svg-icons';
+
+const cx = classNames.bind(styles)
 
 function ConversationsContainer() {
-
+  const [isActive, setIsActive] = useState(true);
   function Toolbar() {
     return (
       <div className={styles.toolbar}>
         <div className={styles.wrapperActions}>
-          <button className={styles.btnAction} onClick={() => { console.log('chua co gi') }} >
+          <button className={cx('btnAction', isActive && 'active')} onClick={() => { console.log('chua co gi') }} >
             <ChatIcon />
           </button>
           <button className={styles.btnAction} onClick={() => { console.log('chua co gi') }}>
@@ -25,6 +31,14 @@ function ConversationsContainer() {
           </button>
         </div>
         <span className={styles.divider}></span>
+        <div className={cx('end-item')}>
+          <button className={cx('btnAction', 'btn-avartar')}>
+            <Avatar src={null} alt="chua co avatar" className={cx('avatar')} />
+          </button>
+          <button className={cx('btnAction', 'btn-expand')}>
+            <FontAwesomeIcon icon={faArrowsLeftRightToLine} />
+          </button>
+        </div>
       </div>
     );
   }

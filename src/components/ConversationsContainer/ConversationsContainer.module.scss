@@ -4,6 +4,7 @@
   display: flex;
   --fds-gray-20: #DADDE1;
   --width: 44px;
+  --filter-primary-icon: invert(8%) sepia(10%) saturate(200%) saturate(200%) saturate(166%) hue-rotate(177deg) brightness(104%) contrast(91%);
 }
 
 // toolbar
@@ -27,11 +28,42 @@
   width: var(--width);
   height: 44px;
   background-color: rgba(0, 0, 0, 0);
+  color: var(--placeholder-icon);
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.04);
   }
 }
+
+button.active {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: var(--primary-icon);
+  /* Các thuộc tính CSS khác cho trạng thái active */
+}
+
+.end-item {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-avartar:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-expand {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+}
+
 
 .divider {
   border-top: 1px solid var(--fds-gray-20);
