@@ -1,12 +1,11 @@
+import ConversationsContainer from "./components/ConversationsContainer/ConversationsContainer.js";
+import './App.css'
 function App() {
   return (
     <div className="App">
-      <div className="sinh" style={{
-        display: 'flex',
-        flexDirection: 'column', alignItems: 'center'
-      }}>
-        <a href="#"><h4>NTSinh.Dev@gmail.com</h4></a>
-        <h1>Success</h1>
+      <ConversationsContainer />
+      <div className="wrapper">
+        <div className="none"><span className="content">Hãy chọn một đoạn chat hoặc bắt đầu cuộc trò chuyện mới</span></div>
       </div>
     </div >
   );
