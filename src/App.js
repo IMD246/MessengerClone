@@ -1,16 +1,15 @@
 import ConversationsContainer from "./components/ConversationsContainer/ConversationsContainer.js";
-import './App.css'
+import "./App.css";
+import Conversations from "./components/Conversation/Conversations.jsx";
+
 function App() {
   return (
     <div className="App">
       <ConversationsContainer />
       <div className="wrapper">
-        <div className="none">
-          <span className="content"></span>
-          <button></button>
-        </div>
+        <Conversations />
       </div>
-    </div >
+    </div>
   );
 }
 

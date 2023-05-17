@@ -1,0 +1,32 @@
+.conversation-container {
+    background-color: var(--web-wash);
+    height: 100vh;
+    display: flex;
+    flex-grow: inherit;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.conversation-message-left{
+    margin: 16px;
+    width: inherit;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: aqua;
+    max-width: inherit;
+}
+
+.conversation-message-right{
+    margin: 16px;
+    width: inherit;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
