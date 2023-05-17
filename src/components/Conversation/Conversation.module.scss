@@ -6,27 +6,49 @@
     text-align: center;
     flex-direction: column;
     justify-content: center;
-  }
+}
+
+.conversation-message-container{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
 
 .conversation-message-left{
-    margin: 16px;
-    width: inherit;
-    border-radius: 16px;
-    padding: 16px;
     display: flex;
+    border-radius: 16px;
     flex-direction: row;
-    align-items: flex-start;
-    background-color: aqua;
-    max-width: inherit;
+    justify-content: flex-start;
 }
 
 .conversation-message-right{
-    margin: 16px;
-    width: inherit;
-    border-radius: 16px;
-    padding: 16px;
     display: flex;
+    border-radius: 16px;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: flex-end;
 }
+
+.message-name-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+
+.message-name-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.message-content{
+    background-color: aqua;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.is-not-sender{
+    background-color: antiquewhite;
+}
+

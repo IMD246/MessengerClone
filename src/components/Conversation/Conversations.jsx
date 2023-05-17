@@ -1,42 +1,28 @@
-import { useEffect, useRef } from "react";
+import Conversation from "./Conversation";
 import styles from "./Conversation.module.scss";
 
 const Conversations = () => {
 
-    const containerRef = useRef(null);
-  const contentRef = useRef(null);
+  const messages = [
+    {message: "hello", sender: true},
+    {message: "how are you", sender: false},
+    {message: "im fine 1", sender: true},
+    {message: "im fine 2", sender: true},
+    {message: "im fine 3", sender: false},
+    {message: "im fine 4", sender: true},
+  ];
 
-  useEffect(() => {
-    const containerWidth = containerRef.current.offsetWidth;
-    contentRef.current.style.width = `${containerWidth}px`;
-  }, []);
-
-    const messages = [
-        "hello",
-        "how are you",
-        "im fine",
-        "im fine1",
-        "im fine2",
-        "im fine3",
-        "im fine4",
-        "im fine5",
-      ];
-
-    return (
-        <div ref={containerRef} className={styles["conversation-container"]}>
-          {/* <span className="content">
+  return (
+    <div className={styles["conversation-container"]}>
+      {/* <span className="content">
             Hãy chọn một đoạn chat hoặc bắt đầu cuộc trò chuyện mới
           </span> */}
-          {messages.map((message) => {
-            return (    
-                <div ref={contentRef} key={message} 
-                className={styles["conversation-message-left"]}>
-                        <p>{message}</p>                    
-                </div>
-            )
-          })}
-        </div>
-    )
+      {messages.map((message) => {
+        
+        return <Conversation message={message}/>;
+      })}
+    </div>
+  );
 };
 
 export default Conversations;
