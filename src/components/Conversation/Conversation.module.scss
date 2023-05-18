@@ -28,18 +28,36 @@
     justify-content: flex-end;
 }
 
+.time-conversation-message{
+    display: block;
+    border-radius: 8px;
+    padding: 4px 16px;
+    color: #000;
+    text-align: center;
+    align-self: center;
+    background-color: #716b6b31;
+}
+
+.conversation-message-left:hover .time-conversation-message{
+    display: block;   
+}
+
 .message-name-left{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    font-size: 14px;
+    margin-left: 8px;
+    font-size: 12px;
+    display: relative;
 }
 
 .message-name-right{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    font-size: 14px;
+    margin-right: 8px;
+    font-size: 12px;
+    display: relative;
 }
 
 .message-content{
