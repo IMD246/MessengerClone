@@ -1,8 +1,9 @@
 @import 'normalize.css';
 
 :root {
-  --accent: #0099FF;
-  --web-wash: #F0F2F5;
+    --accent: #0099FF;
+    --web-wash: #F0F2F5;
+    --text-color: #050505;
 }
 
 * {
@@ -13,7 +14,7 @@
 
 
 html {
-    // font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
@@ -51,4 +52,16 @@ html *::-webkit-scrollbar-track {
 html *::-webkit-scrollbar-track {
     border-radius: 0;
     background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
