@@ -5,8 +5,56 @@
     flex-grow: inherit;
     text-align: center;
     flex-direction: column;
+}
+
+.header-conversation-container{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 2px;
+    border: 2px solid;
+    border-top-color: var(--web-wash);;
+}
+
+.header-conversation-left{
+   display: flex;
+   min-width: 160px;
+   margin: 16px;
+   padding: 0 4px;
+   border-radius: 4px;
+   align-items: center;
+}
+
+.header-conversation-left:hover{
+    background-color: #d1c5c5;
+    cursor: pointer;
+ }
+
+.avatar-header-conversation{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.header-container-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    align-items: flex-start;
     justify-content: center;
 }
+
+.name-info{
+
+}
+
+.header-conversation-right{
+    
+}
+
+
 
 .conversation-message-container{
     display: flex;

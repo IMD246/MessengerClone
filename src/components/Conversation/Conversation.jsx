@@ -11,16 +11,12 @@ const Conversation = (props) => {
 
   return (
     <div className={styles["conversation-message-container"]}>
-        <span className={styles[`message-name-${isRight}`]}>
-                Thành Duy
-        </span>
+      <span className={styles[`message-name-${isRight}`]}>Thành Duy</span>
       <div
         key={message.message}
         className={styles[`conversation-message-${isRight}`]}
       >
-        <span className={cx("time-conversation-message")}>
-          6:02  
-        </span>
+        <span className={cx("time-conversation-message")}>6:02</span>
         <span className={cx("message-content", `${isSender}`)}>
           {message.message}
         </span>
