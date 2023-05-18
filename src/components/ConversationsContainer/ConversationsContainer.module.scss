@@ -1,10 +1,9 @@
 .wrapper {
-  width: 360px;
+  width: 420px;
   height: 100vh;
   display: flex;
   --fds-gray-20: #DADDE1;
   --width: 44px;
-  --filter-primary-icon: invert(8%) sepia(10%) saturate(200%) saturate(200%) saturate(166%) hue-rotate(177deg) brightness(104%) contrast(91%);
 }
 
 // toolbar
@@ -14,7 +13,7 @@
   align-items: center;
 }
 
-.wrapperActions {
+.toolbar-actions {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -22,7 +21,7 @@
   width: 60px;
 }
 
-.btnAction {
+.action-button {
   cursor: pointer;
   border-radius: 6px;
   width: var(--width);
@@ -41,7 +40,7 @@ button.active {
   /* Các thuộc tính CSS khác cho trạng thái active */
 }
 
-.end-item {
+.toolbar-end_item {
   position: fixed;
   bottom: 20px;
   display: flex;
@@ -49,23 +48,27 @@ button.active {
   align-items: center;
 }
 
-.btn-avartar:hover {
+.avatar-button:hover {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.btn-expand {
-  width: 40px;
-  height: 40px;
+.button-circle {
+  width: 36px;
+  height: 36px;
   background-color: rgba(0, 0, 0, 0.04);
   border-radius: 50%;
+  color: var(--primary-icon);
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.08);
   }
 }
 
+.button-circle--margin{
+  margin-left: 12px;
+}
 
-.divider {
+.toolbar-divider {
   border-top: 1px solid var(--fds-gray-20);
   width: 32px;
   height: 1px;
@@ -73,8 +76,30 @@ button.active {
 }
 
 // conversations
-.conversations {
+.conversations_container {
   flex: 1;
   border: 1px solid #ddd;
 
 }
+
+.conversations_container-head {
+
+}
+
+.conversations_container-head--top{
+  margin: 20px 16px;
+  display: flex;
+  justify-content: space-between;
+
+  span{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 28px;
+  }
+}
+.conversations_container-head--bottom{
+  padding: 6px 16px 12px;
+}
+.conversations {}
+
+.conversations_container-foot {}

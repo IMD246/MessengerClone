@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <ConversationsContainer />
       <div className="wrapper">
-        <Conversations />
+        {/* <Conversations /> */}
       </div>
     </div>
   );
